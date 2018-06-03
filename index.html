@@ -13,12 +13,12 @@
 var games = [
 {name:"Spiderman", owned:no},
 {name:"God of War", owned:yes},
-{name:"Horizon: Zero Dawn", owned:no}]
+{name:"Horizon: Zero Dawn", owned:yes}]
 
 displayGames();
 
 function myFunction() {
-    games.sort(function(a, b){return a.year - b.year});
+    games.sort(function(a, b){return a.owned - b.owned});
     displayGames();
 }
 
