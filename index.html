@@ -5,7 +5,7 @@
 
 <p>Click the buttons to sort car objects on age.</p>
 
-<button>Sort</button>
+<button onClick="myFunction()">Sort</button>
 
 <p id="demo"></p>
 
@@ -17,6 +17,12 @@ var games = [
 
 displayGames();
 
+function myFunction() {
+    games.push("Uncharted 4", "Yes")
+    displayCars();
+}
+
+  
 function displayGames() {
   document.getElementById("demo").innerHTML =
   games[0].name + " " + games[0].owned + "<br>" +
