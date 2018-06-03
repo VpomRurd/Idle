@@ -17,11 +17,6 @@ var games = [
 
 displayGames();
 
-function myFunction() {
-    games.sort(function(a, b){return a.owned - b.owned});
-    displayGames();
-}
-
 function displayGames() {
   document.getElementById("demo").innerHTML =
   games[0].name + " " + games[0].owned + "<br>" +
